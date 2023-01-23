@@ -1,0 +1,251 @@
+<html>
+  <title>dharanesh.c</title>
+  <head>
+    <style>
+      *{
+        margin:0;
+      }
+      body {
+        margin: 0;
+        width: 98vw;
+      }
+      td{
+        text-align: center;
+      }
+      table{
+      width: 100%;
+      margin: 0%;
+      }
+      
+      ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 8vh;
+      }
+
+      ul.topnav li {
+        float: left;
+      }
+
+      ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      ul.topnav li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      ul.topnav li a.active {
+        background-color:#111;
+      }
+
+      @media screen and (max-width: 600px) {
+        ul.topnav li.right,
+        ul.topnav li {
+          float: none;
+        }
+      }
+
+      .header {
+        background-color: #04aa6d;
+        padding: 200px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        height: 50vh;
+        
+      }
+
+      .blog {
+        text-align: center;
+        font-family: cursive;
+        padding: 200px;
+        background-color: #00acee;
+        font-weight: 900;
+        height: 50vh;
+      }
+
+
+
+      .about-head{
+        padding:5vh 0;
+        top: 0%;
+        text-align: center;
+        background-color: gold;
+        height: 100vh;
+        padding-top:10vh;
+
+      }
+      .options {
+        background-color: cyan;
+        color: black;
+        cursor: pointer;
+        padding: 30px;
+        border-radius: 30%;
+        outline: bisque;
+        font-size: 15px;
+        height: 10vh;
+        width: 50%;
+      }
+      .active, .options:hover {
+        background-color: blanchedalmond;
+      }
+      .content {
+        padding: 0 18px;
+        border-radius: 30%;
+        display: none;
+        overflow: hidden;
+        width:50%;
+        text-align: center;
+        background-color:whitesmoke;
+        margin-left: 37ch;
+      }
+
+      .acc-head{
+        padding:5vh 0;
+        top: 0%;
+        text-align: center;
+        background-color:cornsilk;
+        height: 100vh;
+        padding-top:10vh;
+
+
+        .acc{
+          padding-top:30px;
+          width: 100%;
+          text-align: center;
+          height: 100vh;
+          top: 50em;
+          background-color: cornsilk;
+        }
+    </style>
+  </head>
+  <body>
+    <ul class="topnav">
+      <li><a class="active" href="#header">Home</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#acad">Academics</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="header" id="header">
+      <h1>Dharanesh chandrashekhar</h1>
+      <p>A personal journey through the ever-evolving digital landscape</p>
+    </div>
+
+    <div class="blog" id="blog">
+      <h1>MY BLOG ✍️</h1>
+      <h2>explore and enjoy!!..</h2>
+      <p>
+        I am Dharanesh.C son of smt.Nagamma.S.R and sri.Chandrashakar.K born on
+        7th may 2002, tuesday 11:45 pm at basaveshwara nursing home, hiriyur. I
+        did my scholling in many local schools of my home town such as
+        Presidency Primary High School , Ganga Central School.later I completed
+        my pre-university from Sri.Chithanya pu college ,tumkuru. now i am
+        perceiving my bachelors in Information Science AND Engineering at Malnad
+        College of Engineering,hassan.
+      </p>
+    </div>
+    <div class="about-head" id="about">
+    <h2> ABOUT </h2>
+  
+
+    <button type="button" class="options">ACHIVEMNTS</button>
+    <div class="content">
+    <p>4th place in interzone 800 mtr race (CBSE). </br>
+         2nd place in 4*100 mtr relay in school.</br>
+         1st place in 1600 mtr race in school.</br>
+         2st place in 800 mtr race in school.</br>
+         2nd place in madads in "INCREDIA'22" at N.M.A.M.I.T ,karkala.</br>
+         1st place in madads in "PRAGYATHA'22" at MCE ,hassan.</br>
+     </P>
+     </div>
+
+
+    <button type="button" class="options">LEADERSHIP</button>
+    <div class="content">
+    <p>cultural team member at GCS (2015-2017).</br>
+           Assembly leader at GCS (2017-2018).</br>
+           Drama coordinator of Abhivyakthi team at MCE (2022-2023).</br>
+    </p>
+    </div>
+
+
+    <button type="button" class="options">SKILLS</button>
+    <div class="content">
+    <p>can write a script for drama or stage events.</br>
+           can act in any drama roles.</br>
+           
+    </p>
+    </div>
+    </div>
+    </div>
+
+    <script>
+    var opti= document.getElementsByClassName("options");
+    var i;
+    for (i = 0; i < opti.length; i++) {
+    opti[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+    
+    });
+    }
+    </script>
+
+    <div class="acc-head" id="acad" >
+    <h2>ACADEMICS📃</h2>
+    <table border="10px"; width="100%";  text-align="center";>
+    <tr> 
+    <th> grade </th> 
+    <th> school/college</th>
+    <th> year </th>
+    <th> roll-num </th>
+    <th> result </th> 
+    </tr>
+
+    <tr> 
+    <td> 10th </td> 
+    <td> Ganga Central School(CBSE),hiriyur </td> 
+    <td> 2017-2018 </td> 
+    <td> 4073292 </td> 
+    <td> 328/500 (pass) </td> 
+    </tr>
+
+    <tr> 
+    <td> 12th </td> 
+    <td> Sri.Chaithanya pu College,tumkuru </td> 
+    <td> 2019-2020 </td> 
+    <td> 591491 </td> 
+    <td> 421/600 (pass) </td> 
+    </tr>
+
+    <tr> 
+    <td> B.E </td> 
+    <td> Malnad College of Engineering </td> 
+    <td> 2020-2024 </td> 
+    <td> 4MC20IS014 </td> 
+    <td> TBA </td> 
+    </tr>
+    </table>
+    </div>
+
+</body>
+</html> 
+
